@@ -1,0 +1,1 @@
+Netbeans Maven project with local testing version of the java backend

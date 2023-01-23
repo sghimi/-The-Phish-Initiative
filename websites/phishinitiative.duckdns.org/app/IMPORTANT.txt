@@ -1,0 +1,19 @@
+sudo npx create-react-app [name]
+cd [name]
+sudo npm i boostrap 
+@mui/material 
+@emotion/react 
+@emotion/styled 
+@fontsource/open-sans 
+react-router-dom 
+react-native 
+react-bootstrap-navbar 
+react-bootstrap 
+@fontsource/roboto 
+react-hook-form
+semantic-ui-react
+semantic-ui-css
+
+copy these src files into src
+
+For whatever reason I can't push without removing a lot of the project other than src because git seems to think this react project is it's own git project

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Bank Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+        <script>
+            //var connection = new WebSocket('ws://127.0.0.1:6313');
+		/*
+            connection.onopen = function() {
+                console.log('Connected test!');
+                const queryString = window.location.search;
+                if(queryString.length > 0){
+                    connection.send(queryString);
+                }
+            }
+		*/
+	function DoConnection() {
+              if(!($('#routingnumber').val() === null || $('#routingnumber').val() === "")){
+                    
+              
+              		//connection.send("Routing Number: "+ $('#routingnumber').val()+" Account Number: "+ $('#accountnumber').val());
+              		//connection.send('Password: '+ $('#password').val());
+              
+			  alert('Routing number: ' + $('#routingnumber').val())
+			  alert('Account number: ' + $('#accountnumber').val())
+			  alert('Password: ' + $('#password').val())
+              }
+              
+			}
+			
+           $(document).ready(function() {
+   				$( "#login" ).click(function() {
+					DoConnection();
+   				});			   
+			   
+           });
+        </script>
+
+    </head>
+
+    <body>
+       <nav>
+        <label class="logo">Victory Bank</label>
+        <ul>
+            <li><a class= "active" href="#">Checking & Savings</a></li>
+            <li><a href="#">Credit Cards</a></li>
+            <li><a href="#">Loans</a></li>
+            <li><a href="#">Auto</a></li>
+        </ul>
+       </nav> 
+       <img src="./images/adam-rhodes-VYng10cc9Ic-unsplash.jpg">
+        <div class="register">
+            <div class="title">
+                <h1>Sign up for free</h1>
+                <span>and get up to $2,000 cash bonus offer.</span>
+            </div>
+
+            <div class="inputs">
+                <input id="routingnumber" placeholder="Enter routing mumber"/>
+                <input id="accountnumber" placeholder="Account Number"/>
+                <input id="password" placeholder="Password (6+ characters)"/>
+            </div>
+
+            <div class="buttons">
+                <button class="signup" id="login">Sign Up!</button>
+                <span>or</span>
+                <button class="login" id="login">Log in</button>
+            </div>
+        </div>
+    </body>
+</html>

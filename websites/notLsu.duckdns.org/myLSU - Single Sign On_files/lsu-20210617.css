@@ -1,0 +1,48 @@
+body {
+    color: white;
+    background: #301456;
+    font-family: Arial,Verdana, Helvetica, sans-serif;
+}
+
+a:link, a:active, a:visited {
+    color: #EFC326;
+    background-color: inherit;
+    text-decoration: underline;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.logo {
+    width: 270px;
+    height: 104px;
+    background: transparent url('../images/myLSU_logo-20210617.png') no-repeat;
+}
+
+.footer_logo {
+    display: block;
+    float: right;
+    width: 80px;
+    height: 30px;
+    background: transparent url('../images/myLSU_footer.png') no-repeat;
+}
+
+#policyNotice {
+    border: 1px solid #666666;
+    color: #000000;
+    background: #B9B9B9;
+    text-align: left;
+    margin-top: .4em;
+    z-index: 10000;
+    position: absolute;
+    padding: .4em;
+}
+
+.error_message {
+    font-weight: bold;
+    font-size: 14px;
+    color: #efc326;
+}
+

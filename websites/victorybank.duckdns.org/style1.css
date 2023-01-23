@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #0b60a1;
+    height: 90px;
+    width: 100%;
+    
+}
+label.logo{
+    color: white;
+    font-size:35px ;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active, a.hover{
+    
+    transition: .5s;
+}
+img{
+    width: 100%;
+}
+.register{
+    font-family: montserrat;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top:35%;
+    left: 5%;
+    border: 3px solid white
+}
+.inputs{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.inputs input{
+    height: 35px;
+    margin-top: 15px;
+    width:80%;
+    padding: 5px;
+    background-color:blackl;
+    border: 1px solid #55555555;
+    font-size: 16px;
+    color:black;
+}
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup{
+    width: 70%;
+    height: 40px;
+    background-color: #2f2f2f;
+    color:white;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login{
+    width: 70%;
+    height: 40px;
+    background-color: #2f2f2f;
+    color:white;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.title span{
+    color: #888888;
+}
+
